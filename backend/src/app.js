@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/health", async (req, res) => {
-  res.status(200).json({ status: "ok", version: "v2" });
+  res.status(200).json({ status: "ok", version: "v3" });
 });
 
 app.get("/users", async (req, res) => {
